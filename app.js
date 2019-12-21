@@ -5,17 +5,18 @@ const app = express()
 const hostname = "127.0.0.1";
 const port = 8000;
 
-// Create HTTP server 
-const server = app.get('/', (req, res) => {
+//IMPORT MODULES
+let wiki = require('./routes/route')
 
-   // Set the response HTTP header with HTTP status and Content type
-   res.writeHead(200, {'Content-Type': 'text/plain'});
-   
+app.use('/wiki', wiki)
+
+// Create HTTP server 
+app.get('/', (req, res) => {   
    // Send the response body "Hello World"
-   res.end('Hello World\n');
+   res.get('./views/index.html');
 });
 
 // Prints a log once the server starts listening
-server.listen(port, hostname, () => {
+app.listen(port, hostname, () => {
    console.log(`Server running at http://${hostname}:${port}/`);
 })
