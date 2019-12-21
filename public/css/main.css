@@ -39,7 +39,12 @@ ul {
 
   .header {
     height: 85vh;
-    background-image: url(../img/samalis_action-web.jpg);
+    background-image: linear-gradient(
+        to right bottom,
+        #784ab4d8, 
+        #6c19d8d8), 
+        url(../img/hero.jpg),
+    url(../img/samalis_action-web.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
