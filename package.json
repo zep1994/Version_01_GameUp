@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/zep1994/Version_01_GameUp#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   }
 }
