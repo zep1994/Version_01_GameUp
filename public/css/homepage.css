@@ -8,7 +8,7 @@
     height: 800px;
     width: 80%;
     position: absolute;
-    background-color: aqua;
+    background-color: #F8F8F8;
     float: left;
 }
 
@@ -28,7 +28,7 @@
 
 .find-coach-box {
     position: relative;
-    color: white;
+    color: rgba(219, 202, 202, 0.925);
     float: right;
     bottom: 10px;
 
@@ -43,6 +43,6 @@
     height: 800px;
     width: 20%;
     float: right;
-    background-color: salmon;
+    background-color: #ffffff;
     position: relative;
 }
