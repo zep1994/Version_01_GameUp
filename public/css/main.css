@@ -11,6 +11,9 @@
       line-height: 1.7;
   } 
 
+
+/* NAVIGATION */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -20,7 +23,7 @@ ul {
   }
   
   li {
-    float: left;
+    float: right;
   }
   
   li a {
