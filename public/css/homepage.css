@@ -1,0 +1,32 @@
+.home-body {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    background-color: aqua;
+}
+
+.find-coach-head {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #efefef;
+    padding: 24px 48px 22px;
+    width: 913px;
+    position: relative;
+    margin: 50px 80px;
+    height: 83px;
+}
+
+.find-coach-box {
+    position: relative;
+    color: white;
+    float: right;
+    bottom: 10px;
+}
+
+.find-coach-box a {
+    background-color: #6c19d8d8;
+    color: white;
+}
