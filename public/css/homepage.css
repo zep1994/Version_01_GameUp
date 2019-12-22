@@ -46,3 +46,19 @@
     background-color: #ffffff;
     position: relative;
 }
+
+.find-coach-body {
+    height: 200px;
+    background-color: #ffffff;
+    width: 913px;
+    color: #3a3a3a;
+    padding: 48px 48px 48px 48px;
+    display: block;
+    transition: all 0s ease 0s;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    left: 50px; 
+    top: -50px;   
+}
+
