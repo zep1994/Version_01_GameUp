@@ -1,8 +1,15 @@
-.home-body {
+.complete-body {
     height: 800px;
     width: 100%;
+    position: relative;
+}
+
+.home-body {
+    height: 800px;
+    width: 80%;
     position: absolute;
     background-color: aqua;
+    float: left;
 }
 
 .find-coach-head {
@@ -15,7 +22,7 @@
     padding: 24px 48px 22px;
     width: 913px;
     position: relative;
-    margin: 50px 80px;
+    margin: 50px 0px 50px 50px;
     height: 83px;
 }
 
@@ -24,9 +31,18 @@
     color: white;
     float: right;
     bottom: 10px;
+
 }
 
 .find-coach-box a {
     background-color: #6c19d8d8;
     color: white;
+}
+
+.home-side {
+    height: 800px;
+    width: 20%;
+    float: right;
+    background-color: salmon;
+    position: relative;
 }
