@@ -19,7 +19,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/wiki', wiki)
 
-// Create HTTP server 
+//HOME PAGE
+app.get('/home', (req, res) => {
+   res.render('home.ejs')
+})
+
+// LANDING PAGE
 app.get('/', (req, res) => {   
    // Send the response body "Hello World"
    res.render('index.ejs');
