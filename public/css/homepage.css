@@ -30,7 +30,7 @@
     position: relative;
     color: rgba(219, 202, 202, 0.925);
     float: right;
-    bottom: 10px;
+    bottom: 35px;
 
 }
 
@@ -62,3 +62,24 @@
     top: -50px;   
 }
 
+.heading-title {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    word-spacing: 0px;
+    color: #6c19d8d8;
+    height: 15px;
+    width: 700px;
+    display: relative;
+    float: left;
+}
+
+.heading-desc {
+    font-size: 20px;
+    line-height: 25px;
+    word-spacing: 0px;
+    color: white;
+    height: 25px;
+    width: 709px;
+    position: relative;
+}
