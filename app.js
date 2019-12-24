@@ -19,6 +19,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/wiki', wiki)
 
+app.get('/new', (req, res) => {
+   res.render('coach/new.ejs')
+})
+
 //HOME PAGE
 app.get('/home', (req, res) => {
    res.render('home.ejs')
