@@ -23,7 +23,7 @@ app.get('/new', (req, res) => {
    res.render('coach/new.ejs')
 })
 
-app.get('/coach', (req, res) => {
+app.get('/coaches', (req, res) => {
    res.render('coach/coach.ejs')
 })
 
