@@ -23,6 +23,10 @@ app.get('/new', (req, res) => {
    res.render('coach/new.ejs')
 })
 
+app.get('/coach', (req, res) => {
+   res.render('coach/coach.ejs')
+})
+
 //HOME PAGE
 app.get('/home', (req, res) => {
    res.render('home.ejs')
