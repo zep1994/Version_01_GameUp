@@ -17,9 +17,8 @@ app.set('view engine', 'ejs')
 //Setup access to public folder
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/wiki', wiki)
 
-app.get('/new', (req, res) => {
+app.get('/find-coach', (req, res) => {
    res.render('coach/new.ejs')
 })
 
@@ -31,6 +30,7 @@ app.get('/coaches', (req, res) => {
 app.get('/home', (req, res) => {
    res.render('home.ejs')
 })
+
 
 // LANDING PAGE
 app.get('/', (req, res) => {   
