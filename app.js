@@ -18,9 +18,9 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
 
 
-app.get('/find-coach', (req, res) => {
-   res.render('coach/new.ejs')
-})
+// app.get('/find-coach', (req, res) => {
+//    res.render('coach/new.ejs')
+// })
 
 app.get('/coaches', (req, res) => {
    res.render('coach/coach.ejs')
