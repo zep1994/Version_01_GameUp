@@ -1,6 +1,6 @@
 const Coach = require('../models/coach')
 
-exports.getProducts = (req, res, next) => {
+exports.getCoaches = (req, res, next) => {
     Coach.fetchAll((coaches) => {
         res.render('coach/coach.ejs', {
             coach: coaches,
