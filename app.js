@@ -9,6 +9,7 @@ const path = require('path');
 
 //IMPORT MODULES
 let wiki = require('./routes/route')
+const coachesRoute = require('./routes/coaches')
 
 
 //set Engine for EJS
@@ -22,14 +23,13 @@ app.use(express.static(path.join(__dirname, 'public')))
 //    res.render('coach/new.ejs')
 // })
 
-app.get('/coaches', (req, res) => {
-   res.render('coach/coach.ejs')
-})
-
 //HOME PAGE
 app.get('/home', (req, res) => {
    res.render('home.ejs')
 })
+
+app.use(coachesRoute)
+
 
 
 // LANDING PAGE
