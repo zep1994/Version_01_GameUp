@@ -8,6 +8,15 @@ const p = path.join(
         'coaches.json'
         )
 
+const getCoachesFromFile = cb => {
+    fs.readFile(p, (err, fileContent) => {
+        if (err) {
+            return cb([])
+        }
+        cb(JSON.parse(fileContent))
+    })
+}
+
 module.exports = class Coach {
     constructor(title, description, price, imageURL) {
         this.title = title 
