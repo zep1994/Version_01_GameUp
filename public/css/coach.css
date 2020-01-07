@@ -10,7 +10,7 @@ main {
 }
 
 .grid {
-    display: flex;
+    display: relative;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
@@ -18,7 +18,15 @@ main {
 
 .card {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    float: left;
+    width: 75%;
+    margin: 30px;
+    padding: 50px;
   }
+
+.coach_card {
+    float: left;
+}
   
   .card__header,
   .card__content {
