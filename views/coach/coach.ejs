@@ -5,12 +5,37 @@
 
 
 <main>
-    <h1>Coaches available now</h1>
-    <p>List of all the Coaches...</p>
+    <% if (coaches.length > 0) { %>
+        <h1>Coaches available now</h1>
+        <p>List of all the Coaches...</p>
 
-    <!-- Filter down by criteria -->
+        <!-- Filter down by criteria -->
 
-        <div class="grid">
+        <% for (let coach of coaches) { %>
+            <div class="grid">
+                <article class="card coach_card">
+                    <header class="card_header">
+                        <h1 class="coach_title"><%= coach.title %></h1>
+                    </header>
+                    <div class="card_image">
+                        <img src="<%= coach.imageURL %>" alt="<%= coach.title %>">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="coach_pricing"><%= coach.price %></h2>
+                        <h2 class="coach_summary"><%= coach.description %></h2>
+                        <div class="card_actions">
+                            <button class="btn">Grab this Coach</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        <% } %>
+    <% } else { %> 
+        <h1>No Products Found </h1>
+    <% } %>
+    
+
+        <!-- <div class="grid">
             <article class="card coach_card">
                 <header class="card_header">
                     <h1 class="coach_title">Title</h1>
@@ -66,7 +91,7 @@
                     </div>
                 </div>
             </article>
-        </div>
+        </div> -->
 
     <!-- cards will go here  -->
 
