@@ -10,6 +10,7 @@ const path = require('path');
 //IMPORT MODULES
 let wiki = require('./routes/route')
 const coachesRoute = require('./routes/coaches')
+const pageNotFound = require('./controller/error/404')
 
 
 //set Engine for EJS
@@ -42,3 +43,5 @@ app.get('/', (req, res) => {
 app.listen(port, hostname, () => {
    console.log(`Server running at http://${hostname}:${port}/`);
 })
+
+app.use(pageNotFound.get404)
