@@ -9,3 +9,9 @@ exports.getCoaches = (req, res, next) => {
         })
     })
 }
+
+exports.getCoach = (req, res, next) => {
+    const coach_id = req.params.coachId
+    console.log(coach_id)
+    res.redirect('/')
+}
