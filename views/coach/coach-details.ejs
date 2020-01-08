@@ -1,0 +1,22 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/homepage.css">
+<link rel="stylesheet" href="/css/coach.css">
+</head>
+
+    <body>
+        <main class="centered">
+            <%- include('../includes/navigation.ejs') %>
+
+            <h1><%= coach.title %></h1>
+            <hr />
+            <img src="<%= coach.imageURL %>" alt="<%= coach.title %>" />
+
+            <h2><%= coach.price %></h2>
+
+            <p><%= coach.description %></p>
+
+            <%- include('../includes/footer.ejs') %>
+
+        </main>
+    <%- include('../includes/end.ejs') %>
+
