@@ -2,11 +2,13 @@
     {"title":"Tom",
         "imageURl":"",
         "description":"some text",
-        "price":"21"
+        "price":"21",
+        "id": "1"
     },
     {"title":"Tom",
         "imageURl":"",
         "description":"some text",
-        "price":"21.01"
+        "price":"21.01",
+        "id": "2"
         }
 ]
