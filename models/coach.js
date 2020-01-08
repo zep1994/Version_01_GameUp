@@ -26,6 +26,7 @@ module.exports = class Coach {
     }
 
     save() {
+        this.id = Math.random().toString()
         getCoachesFromFile(coaches => { 
             coaches.push(this)
             fs.writeFile(p, JSON.stringify(coaches), (err) => {
