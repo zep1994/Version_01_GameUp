@@ -13,7 +13,13 @@ exports.getCoaches = (req, res, next) => {
 exports.getCoach = (req, res, next) => {
     const coach_Id = req.params.coachId
     Coach.findById(coach_Id, coach => {
-        res.render('coach/coach-details', {coach: coach})
+        res.render('coach/coach-details', 
+        {
+            coach: coach,
+            pageTitle: "coach.title",
+            path: '/coaches'
+        }
+        )
     })
     
 }
