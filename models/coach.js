@@ -38,4 +38,11 @@ module.exports = class Coach {
     static fetchAll(cb) {
         getCoachesFromFile(cb) 
     }
+
+    static findById(id, cb) {
+        getCoachesFromFile(coaches => {
+            const coach = coaches.find(c => c.id === id)
+            cb(coach)
+        })
+    }
 }

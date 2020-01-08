@@ -11,7 +11,9 @@ exports.getCoaches = (req, res, next) => {
 }
 
 exports.getCoach = (req, res, next) => {
-    const coach_id = req.params.coachId
-    console.log(coach_id)
+    const coach_Id = req.params.coachId
+    Coach.findById(coach_Id, coach => {
+        console.log(coach)
+    })
     res.redirect('/')
 }
