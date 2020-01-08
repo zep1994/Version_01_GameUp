@@ -9,6 +9,10 @@ main {
     margin: auto;
 }
 
+.centered {
+    text-align: center;
+}
+
 .grid {
     display: relative;
     flex-wrap: wrap;
