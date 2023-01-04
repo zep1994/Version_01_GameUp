@@ -85,7 +85,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](../../gameup.png)
 
 This app allows you to connect with coaches who are available at the time for coaching, similar to Uber. If a coach is available then a student can  request
 a slot on that coaches calendar.
